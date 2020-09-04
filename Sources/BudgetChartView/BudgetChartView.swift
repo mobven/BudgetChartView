@@ -11,8 +11,14 @@ import UIKit
 
 /// Pie slice object
 public struct Slice: Equatable {
+    
     var color: UIColor
     var percentage: CGFloat
+    
+    public init(color: UIColor, percentage: CGFloat) {
+        self.color = color
+        self.percentage = percentage
+    }
 }
 
 public class BudgetChartView: UIView {
